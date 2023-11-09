@@ -13,6 +13,7 @@ pdoc --html -o ./docs .
 # Dependencies
 
 ```bash
+source .venv/bin/activate
 pip install graphviz
 pip install pylint
 pyreverse your_module_or_package -o dot
