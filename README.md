@@ -6,6 +6,7 @@
 
 ```bash
 source venv/bin/activate
+pip install sphinx
 ```
 
 # Tools
