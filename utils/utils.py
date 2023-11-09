@@ -1,6 +1,15 @@
 
 
 def tsv_to_dict(data_file):
+    """
+    Return a Dict from a .tsv file
+
+    :param data_file: path to a .tsv file
+    :type data_file: .tsv file
+    :return: Dictionary
+    :rtype: Dict
+
+    """    
 
     RNAcode= {}
 

@@ -2,12 +2,12 @@
 
 
 
-# Activate your venv 
+# Documentation (Ongoing)
 
 ```bash
-source venv/bin/activate
-pip install sphinx
+virtualenv .venv
+source .venv/bin/activate
+
 ```
 
-# Tools
-sphinx for documentation
+# Tools (Ongoing)
