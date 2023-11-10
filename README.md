@@ -2,15 +2,27 @@
 
 ## Setup environment
 
+### Linux
 ```bash
 chmod +x setup_env.sh
 source setup_env.sh
 ```
 
+### Windows
+```bash
+    .\setup_env.bat
+```
+
 ## Codon analysis
 
+### Linux
 ```bash
 python3 src/analysis/codon_analysis.py
+```
+
+### Windows
+```bash
+python src/analysis/codon_analysis.py
 ```
 
 # Documentation (Ongoing)
