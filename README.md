@@ -1,8 +1,22 @@
 # DNA-Analysis
 
+## Setup environment
+
+```bash
+chmod +x setup_env.sh
+source setup_env.sh
+```
+
+## Codon analysis
+
+```bash
+python3 src/analysis/codon_analysis.py
+```
+
 # Documentation (Ongoing)
 
 ## doc
+
 ```bash
 virtualenv .venv
 source .venv/bin/activate
@@ -10,7 +24,7 @@ pip install pdoc3
 pdoc --html -o ./docs .
 ```
 
-# Dependencies
+# Dependencies (Ongoing)
 
 ```bash
 source .venv/bin/activate
