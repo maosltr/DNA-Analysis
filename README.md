@@ -15,14 +15,15 @@ source setup_env.sh
 
 ## Codon analysis
 
-### Linux
-```bash
-python3 src/analysis/codon_analysis.py
-```
-
-### Windows
 ```bash
 python src/analysis/codon_analysis.py
+```
+
+# Testing
+
+```bash
+python -m unittest tests/tests.py
+
 ```
 
 # Documentation (Ongoing)
