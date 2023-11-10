@@ -1,4 +1,4 @@
-
+import csv
 
 def tsv_to_dict(data_file):
     """
