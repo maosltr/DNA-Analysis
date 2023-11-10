@@ -10,7 +10,7 @@ source setup_env.sh
 
 ### Windows
 ```bash
-    .\setup_env.bat
+.\setup_env.bat
 ```
 
 ## Codon analysis
