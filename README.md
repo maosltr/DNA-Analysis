@@ -22,8 +22,11 @@ python src/analysis/codon_analysis.py
 # Testing
 
 ```bash
-python -m unittest tests/tests.py
-
+virtualenv .venv
+source .venv/bin/activate
+pip install xmlrunner
+pip install html-testRunner
+python tests/test_codon_analysis.py
 ```
 
 # Documentation (Ongoing)
