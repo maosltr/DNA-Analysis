@@ -17,6 +17,6 @@ if __name__ == "__main__":
     # unittest.main()
     unittest.main(
         testRunner=HtmlTestRunner.HTMLTestRunner(
-            report_name="test_report", output="tests"
+            report_name="test_report", output="tests/reports"
         )
     )
