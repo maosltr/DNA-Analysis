@@ -1,26 +1,27 @@
 import os
 from utils import utils
 import argparse
+import pandas as pd
 
 
 def analyze_codon(codon):
-    """Function that returns amino acids from genetic code dictionary.
+    """Function that returns amino acids Name from the codon.
 
     Args:
-        genetic_code_dict
         codon: eg. "AUC"
 
     Returns:
-        amino_acid: eg. "Isoleucine"
+        amino_acid Full Name: eg. "Isoleucine"
     """
 
     dataset = "genetic_code.tsv"
+
     dataset_path = os.path.join(os.getcwd(), "data", dataset)
-    genetic_code_dict = utils.tsv_to_dict(dataset_path)
+    df = pd.read_csv(dataset_path, sep="\t")
+    column_names = ["Codon", "Amino Acid", "Abbreviation", "Full Name"]
+    df.columns = column_names
 
-    amino_acid = genetic_code_dict[codon][2]
-
-    return amino_acid
+    return df[df["Codon"] == codon]["Full Name"].values[0]
 
 
 if __name__ == "__main__":

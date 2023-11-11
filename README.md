@@ -2,6 +2,15 @@
 
 ## Setup environment
 
+```bash
+virtualenv .venv
+source .venv/bin/activate
+pip install pandas
+pip install html-testRunner
+pip install pdoc3
+
+```
+
 ### Linux
 ```bash
 chmod +x setup_env.sh
@@ -13,6 +22,7 @@ source setup_env.sh
 .\setup_env.bat
 ```
 
+
 ## Codon analysis
 
 ```bash
@@ -22,10 +32,6 @@ python src/analysis/codon_analysis.py
 # Testing
 
 ```bash
-virtualenv .venv
-source .venv/bin/activate
-pip install xmlrunner
-pip install html-testRunner
 python tests/test_codon_analysis.py
 ```
 
@@ -34,9 +40,6 @@ python tests/test_codon_analysis.py
 ## doc
 
 ```bash
-virtualenv .venv
-source .venv/bin/activate
-pip install pdoc3
 pdoc --html -o ./docs .
 ```
 
