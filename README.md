@@ -2,6 +2,7 @@
 
 ## Setup environment
 
+### Linux
 ```bash
 virtualenv .venv
 source .venv/bin/activate
@@ -9,16 +10,17 @@ pip install pandas
 pip install html-testRunner
 pip install pdoc3
 
-```
-
-### Linux
-```bash
 chmod +x setup_env.sh
 source setup_env.sh
 ```
 
 ### Windows
 ```bash
+python -m venv  .venv
+.\.venv\Scripts\activate
+pip install pandas
+pip install html-testRunner
+pip install pdoc3
 .\setup_env.bat
 ```
 
@@ -34,6 +36,8 @@ python src/analysis/codon_analysis.py
 ```bash
 python tests/test_codon_analysis.py
 ```
+
+Test reports are saved under ./tests/reports
 
 # Documentation (Ongoing)
 
