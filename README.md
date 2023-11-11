@@ -2,25 +2,48 @@
 
 ## Setup environment
 
+### Linux
 ```bash
+virtualenv .venv
+source .venv/bin/activate
+pip install pandas
+pip install html-testRunner
+pip install pdoc3
+
 chmod +x setup_env.sh
 source setup_env.sh
 ```
 
+### Windows
+```bash
+python -m venv  .venv
+.\.venv\Scripts\activate
+pip install pandas
+pip install html-testRunner
+pip install pdoc3
+.\setup_env.bat
+```
+
+
 ## Codon analysis
 
 ```bash
-python3 src/analysis/codon_analysis.py
+python src/analysis/codon_analysis.py
 ```
+
+# Testing
+
+```bash
+python tests/test_codon_analysis.py
+```
+
+Test reports are saved under ./tests/reports
 
 # Documentation (Ongoing)
 
 ## doc
 
 ```bash
-virtualenv .venv
-source .venv/bin/activate
-pip install pdoc3
 pdoc --html -o ./docs .
 ```
 
@@ -34,4 +57,10 @@ pyreverse your_module_or_package -o dot
 dot -Tpng input.dot -o output.png
 ```
 
-# Tools (Ongoing)
+# Tools
+
+```bash
+source .venv/bin/activate
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
