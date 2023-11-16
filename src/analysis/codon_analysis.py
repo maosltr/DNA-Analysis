@@ -26,9 +26,11 @@ def analyze_codon(codon):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Get the amino acid from the codon")
-    parser.add_argument("--c", dest="codon", type=str, help="Codon (eg. 'AUC')")
+    parser.add_argument(
+        "--c", dest="codon", type=str, help="Codon (eg. 'AUC')", required=True
+    )
 
     args = parser.parse_args()
 
     amino_acid = analyze_codon(args.codon)
-    print(analyze_codon("AUC"))
+    print(amino_acid)
